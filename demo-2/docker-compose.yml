@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+    express:
+        build:
+            context: .
+        ports:
+            - "8080:3000"
