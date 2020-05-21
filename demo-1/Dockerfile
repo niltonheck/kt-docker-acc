@@ -10,4 +10,6 @@ RUN apt-get install -y nodejs
 
 COPY ./src/ /app/
 
+EXPOSE 3000
+
 CMD ["node","/app/app.js"]
