@@ -10,8 +10,10 @@ RUN apt-get install -y nodejs
 
 COPY ./src/ /app/
 
+WORKDIR /app/
+
 RUN npm install
 
 EXPOSE 3000
 
-CMD ["node","/app/app.js"]
+CMD ["node","app.js"]
