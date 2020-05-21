@@ -1,6 +1,8 @@
 FROM ubuntu:latest
 
-RUN sudo apt update && sudo apt upgrade -y
+RUN apt-get update && apt-get upgrade -y
+
+RUN apt-get install -y curl
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 
